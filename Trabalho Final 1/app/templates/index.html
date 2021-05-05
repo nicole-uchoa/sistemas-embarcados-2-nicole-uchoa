@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel='icon' href="{{ url_for('static', filename= 'img/house.svg') }}" type='image/x-icon' sizes="16x16" />
+    <title>Automação Residencial</title>
+</head>
+
+<body>
+    <div class="jumbotron vertical-center">
+        <div class="bg-img"></div>
+        <div class="container-fluid">
+
+            <h1 class="text-center">Automação Residencial</h1>
+            <figure class="text-center bg-light bg-gradient rounded-pill">
+                <blockquote class="blockquote">
+                    <p>Um simples sistema para demonstração de recursos para automação residencial.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Desenvolvido por <cite title="Source Title">Nicole Uchôa</cite>
+                </figcaption>
+            </figure>
+
+            <div class="row text-center">
+                <div class="col">
+                    <div id="luz-sala" role="button" class="p-4 border border-success bg-light rounded-pill">Luz da Sala</div>
+                </div>
+                <div class="col">
+                    <div id="luz-quarto" role="button" class="p-4 border border-danger bg-light rounded-pill">Luz do Quarto</div>
+                </div>
+                <div class="col">
+                    <div id="portao" role="button" class="p-4 border border-primary bg-light rounded-pill">Portão</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename= 'js/bootstrap.bundle.min.js') }}"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename= 'js/jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename= 'js/script.js') }}"></script>
+</body>
+
+</html>
